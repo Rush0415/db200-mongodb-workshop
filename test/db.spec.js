@@ -51,7 +51,7 @@ describe('Mongo Exercises collection', function main() {
       let collection = db.collection('cars');
       collection.find({ "make": "honda" }).toArray((err, docs) => {
         expect(err).to.equal(null);
-        expect(docs.length).to.equal(1);
+        expect(docs.length).to.equal(7);
         done();
       });
     });
